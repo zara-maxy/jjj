@@ -15,7 +15,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // GitHub token - replace with your own
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || "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";
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || "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";
 
 // All 24 available GitHub Models
 const MODELS = [
