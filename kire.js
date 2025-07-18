@@ -8,14 +8,15 @@
  * API: GET /api/models/{model}/chat?q=your_message
  * Compare: GET /api/compare?q=your_message&models=model1,model2
  */
-
+import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express';
 import cors from 'cors';
 const app = express();
 const port = process.env.PORT || 5000;
 
 // GitHub token - replace with your own
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || "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";
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 // All 24 available GitHub Models
 const MODELS = [
